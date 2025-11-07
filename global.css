@@ -1,0 +1,41 @@
+/* === FIX UNTUK NAVBAR DAN ANIMASI === */
+
+/* Pastikan halaman bisa scroll normal */
+html, body {
+  height: auto !important;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* Kembalikan posisi normal navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  z-index: 1000;
+}
+
+/* Supaya konten tetap punya animasi naik */
+.home-fix > *:not(.bg):not(.image-2):not(#navbar) {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Animasi naik */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tambahkan sedikit padding atas supaya konten tidak ketimpa navbar */
+.home-fix {
+  padding-top: 100px; /* sesuaikan dengan tinggi navbar */
+}

@@ -1,0 +1,2063 @@
+.home-fix {
+    overflow: hidden;
+    background: radial-gradient(
+      50% 50% at 58% 35%,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 240, 1) 50%
+    );
+    width: 100%;
+    min-width: 1266px;
+    min-height: 6360px;
+    position: relative;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: none; /* transparan total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+  }
+
+  /* Saat di-scroll */
+  #navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4); /* hitam semi transparan */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: translateY(-8px); /* naik sedikit */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* ganti dengan warna/background kamu */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .home-fix .image {
+    position: absolute;
+    top: 1083px;
+    left: 760px;
+    width: 506px;
+    height: 646px;
+    aspect-ratio: 0.77;
+  }
+  
+  .home-fix .img {
+    position: absolute;
+    top: 2810px;
+    left: 761px;
+    width: 423px;
+    height: 403px;
+    aspect-ratio: 1.05;
+    object-fit: cover;
+  }
+  
+  .home-fix .bg {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 1266px;
+    height: 954px;
+    background-color: #000000;
+    aspect-ratio: 1.49;
+  }
+  
+  .home-fix .image-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1266px;
+    height: 954px;
+    aspect-ratio: 1.33;
+    object-fit: cover;
+    opacity: 0.55;
+  }
+  
+  .home-fix .frame {
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 49px;
+  left: 275px;
+  gap: 4px;
+  }
+  
+  .home-fix .frame-wrapper {
+    position: relative;
+    width: 75px;
+    height: 47px;
+  }
+  
+  .home-fix .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .home-fix .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    right: 10px; 
+  }
+  
+  .home-fix .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px; /* atur jarak antar menu di sini */
+    position: absolute;
+    top: 60px;
+    left: 280px;
+  }
+
+  .home-fix .frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-fix .text-wrapper-2 {
+    position: relative;
+    align-self: stretch;
+    width: 94.82px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-3 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .home-fix .text-wrapper-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #f5d000;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .home-fix .text-wrapper-3:hover::after {
+    width: 100%;
+  }
+
+  .home-fix .text-wrapper-3.active::after {
+    width: 100%;
+  }
+
+  .home-fix .text-wrapper-3.active {
+    color: #f5d000;
+  }
+
+  .home-fix .text-wrapper-3:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .home-fix .image-3 {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  /* Saat hover ubah jadi kuning */
+  .home-fix .image-3:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }
+  
+  
+  .home-fix .frame-3 {
+    display: flex;
+    width: 148px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0; /* jangan pakai padding atas/bawah */
+    position: absolute;
+    top: 47px;
+    left: 1057px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* animasi halus */
+    text-decoration: none;
+  }
+
+  .home-fix .frame-3:hover {
+    background-color: #1eb15a; /* sedikit lebih gelap */
+    transform: scale(1.05); /* efek membesar */
+    cursor: pointer;
+  }
+  
+  .home-fix .img-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .home-fix .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-4 {
+    display: flex;
+    flex-direction: column;
+    width: 1108px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 161px;
+    left: 78px;
+  }
+  
+  .home-fix .frame-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .tampil-stylish-wrapper {
+    display: flex;
+    width: 990px;
+    height: 394px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+  }
+  
+  .home-fix .tampil-stylish {
+    position: relative;
+    width: 912.75px;
+    text-shadow: 2px 2px 5px #00000080;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 80px;
+  }
+  
+  .home-fix .perawatan-rambut-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-top: -64px;
+  }
+  
+  .home-fix .perawatan-rambut {
+    position: relative;
+    width: 1075.75px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  
+  .home-fix .frame-6 {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-7 {
+    display: flex;
+    width: 290px;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none; /* hilangkan underline */
+    cursor: pointer;
+  }
+  
+  .home-fix .frame-7:hover {
+    background-color: #1eb15a; /* warna lebih gelap saat hover */
+    transform: scale(1.05); /* efek membesar halus */
+  }
+  
+  .home-fix .whats-app {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .home-fix .text-wrapper-5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }  
+  
+  .home-fix .reservasi-cepat-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .reservasi-cepat {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    right: 10px;
+  }
+  
+  .home-fix .frame-8 {
+    position: absolute;
+    top: 843px;
+    left: 75px;
+    width: 1116px;
+    height: 156px;
+    display: flex;
+    background-color: #101010;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .home-fix .frame-9 {
+    display: flex;
+    margin-top: 42.5px;
+    width: 220px;
+    height: 71px;
+    position: relative;
+    margin-left: 53px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .home-fix .whats-app-2 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: -8.00px;
+  }
+  
+  .home-fix .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-right: -8.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-10 {
+    display: flex;
+    margin-top: 28.5px;
+    width: 417px;
+    height: 99px;
+    position: relative;
+    left: 20px;
+    margin-left: 76.5px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .home-fix .address {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .home-fix .p {
+    position: relative;
+    width: 336.99px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-11 {
+    display: flex;
+    margin-top: 42.5px;
+    width: 221px;
+    height: 71px;
+    position: relative;
+    margin-left: 75.5px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .home-fix .clock {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: -8.50px;
+  }
+  
+  .home-fix .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-right: -8.50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .home-fix .frame-8 {
+    position: absolute;
+    top: 843px;
+    left: 75px;
+    width: 1116px;
+    height: 156px;
+    background-color: #101010;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* tengah horizontal */
+    align-items: center;     /* tengah vertikal */
+  }
+  
+  .home-fix .content-wrapper {
+    display: flex;
+    flex-direction: row;     /* pastikan sejajar horizontal */
+    align-items: center;
+    justify-content: space-around; /* jarak seimbang antar frame */
+    width: 100%;
+    padding: 0 40px;
+  }
+  
+  .home-fix .frame-9,
+  .home-fix .frame-10,
+  .home-fix .frame-11 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    margin: 0; /* hapus margin biar sejajar */
+  }
+  
+
+  
+  .home-fix .frame-12 {
+    position: absolute;
+    top: 1709px;
+    left: 0;
+    width: 1266px;
+    height: 677px;
+    background-color: #000000;
+    border-radius: 100px 100px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .home-fix .frame-13 {
+    display: flex;
+    flex-direction: column;
+    width: 541px;
+    align-items: flex-start;
+    position: absolute;
+    top: 153px;
+    left: 65px;
+  }
+  
+  .home-fix .frame-14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-15 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .cantik-keren-dalam-wrapper {
+    display: flex;
+    width: 518px;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .cantik-keren-dalam {
+    position: relative;
+    width: 369.35px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-16 {
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -32px;
+  }
+  
+  .home-fix .frame-17 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px 16px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .text-wrapper-8 {
+    position: relative;
+    width: 488px;
+    margin-top: -1.00px;
+    margin-right: -8.00px;
+    font-family: "Poppins", sans-serif;;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-18 {
+    display: flex;
+    flex-direction: column;
+    width: 153px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -32px;
+    transition: transform 0.3s ease; /* animasi smooth untuk zoom */
+  }
+  
+  .home-fix .frame-18:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .frame-18:hover .text-wrapper-9 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .home-fix .frame-18:hover .line {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .home-fix .frame-19 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 55px;
+  }
+  
+  .home-fix .frame-20 {
+    display: flex;
+    width: 649px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px 16px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-fix .text-wrapper-9 {
+    position: relative;
+    width: 649.67px;
+    margin-top: -1.00px;
+    margin-right: -8.67px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .line {
+    position: absolute;
+    top: 25px;
+    left: 115px;
+    width: 9px;
+    height: 7px;
+    object-fit: cover;
+  }
+  
+  .home-fix .image-4 {
+    position: absolute;
+    top: 143px;
+    left: 933px;
+    width: 250px;
+    height: 392px;
+    aspect-ratio: 0.64;
+    object-fit: cover;
+  }
+  
+  .home-fix .image-5 {
+    position: absolute;
+    top: 143px;
+    left: 633px;
+    width: 263px;
+    height: 392px;
+    aspect-ratio: 0.67;
+    object-fit: cover;
+  }
+  
+  .home-fix .yellow-cutting {
+    position: absolute;
+    top: 380px;
+    left: 843px;
+    width: 141px;
+    height: 141px;
+  }
+  
+  .home-fix .line-2 {
+    position: absolute;
+    top: 217px;
+    left: 914px;
+    width: 3px;
+    height: 242px;
+  }
+  
+  .home-fix .line-3 {
+    position: absolute;
+    top: 408px;
+    left: 0;
+    width: 127px;
+    height: 270px;
+  }
+  
+  .home-fix .frame-21 {
+    position: absolute;
+    top: 3334px;
+    left: 0;
+    width: 100%;
+    height: 1418px;
+    background-color: #000000;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+  }
+  
+  
+  .home-fix .group {
+    position: absolute;
+    top: 1151px;
+    left: 985px;
+    width: 168px;
+    height: 168px;
+  }
+  
+  .home-fix .group-2 {
+    position: absolute;
+    top: 160px;
+    left: 89px;
+    width: 168px;
+    height: 168px;
+  }
+  
+  .home-fix .frame-22 {
+    display: flex;
+    width: 541px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 123px;
+    left: 65px;
+  }
+  
+  .home-fix .frame-23 {
+    position: relative;
+    width: 541px;
+    height: 80px;
+  }
+  
+  .home-fix .frame-24 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 103px;
+    left: 516px;
+  }
+  
+  .home-fix .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .image-6 {
+    position: absolute;
+    top: 220px;
+    left: 135px;
+    width: 347px;
+    height: 484px;
+    aspect-ratio: 0.72;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-6:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-7 {
+    position: absolute;
+    top: 220px;
+    left: 514px;
+    width: 214px;
+    height: 214px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-7:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-8 {
+    position: absolute;
+    top: 467px;
+    left: 514px;
+    width: 214px;
+    height: 237px;
+    aspect-ratio: 0.9;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-8:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-9 {
+    position: absolute;
+    top: 736px;
+    left: 135px;
+    width: 287px;
+    height: 287px;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-9:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-10 {
+    position: absolute;
+    top: 736px;
+    left: 454px;
+    width: 274px;
+    height: 287px;
+    aspect-ratio: 0.96;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-10:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-11 {
+    position: absolute;
+    top: 1055px;
+    left: 135px;
+    width: 593px;
+    height: 180px;
+    aspect-ratio: 3.29;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-11:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-12 {
+    position: absolute;
+    top: 220px;
+    left: 761px;
+    width: 347px;
+    height: 593px;
+    aspect-ratio: 0.59;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-12:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .image-13 {
+    position: absolute;
+    top: 845px;
+    left: 761px;
+    width: 347px;
+    height: 390px;
+    aspect-ratio: 0.89;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .image-13:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .group-3 {
+    position: absolute;
+    top: 1260px;
+    left: 541px;
+    width: 183px;
+    height: 55px;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-fix .group-3:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .group-3:hover .text-wrapper-11 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .home-fix .group-3:hover .line-4 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .home-fix .frame-25 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .home-fix .text-wrapper-11 {
+    position: relative;
+    width: 167.04px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .line-4 {
+    position: relative;
+    left: 163px;
+    top: 20px;
+  }
+  
+  .home-fix .yellow-cutting-2 {
+    position: absolute;
+    top: 3264px;
+    left: 551px;
+    width: 141px;
+    height: 141px;
+  }
+  
+  .home-fix .pink-combing {
+    position: absolute;
+    top: 4599px;
+    left: 0;
+    width: 183px;
+    height: 611px;
+  }
+  
+  .home-fix .group-4 {
+    position: absolute;
+    top: 5857px;
+    left: 0;
+    width: 100%;
+    height: 509px;
+    display: flex;
+    background-color: #000000;
+  }
+  
+  
+  .home-fix .frame-26 {
+    display: flex;
+    margin-top: 460.1px;
+    width: 274.28px;
+    height: 49.36px;
+    margin-left: 495.9px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .home-fix .text-wrapper-12 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-13 {
+    position: absolute;
+    top: 5770px;
+    left: 1px;
+    width: 1266px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-27 {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    height: 217px;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 5969px;
+    left: 412px;
+  }
+  
+  .home-fix .text-wrapper-14 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .group-5 {
+    position: relative;
+    width: 137.69px;
+    height: 189.85px;
+    margin-bottom: -17.18px;
+  }
+  
+  .home-fix .frame-28 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    height: 100%;
+  }
+  
+  .home-fix .text-wrapper-15 {
+    position: relative;
+    align-self: stretch;
+    height: 24.97px;
+    margin-top: -1.00px;
+    color: #ffffffcc;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .text-wrapper-15:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .home-fix .text-wrapper-16 {
+    position: relative;
+    align-self: stretch;
+    height: 24.97px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .text-wrapper-16:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .home-fix .text-wrapper-17 {
+    position: absolute;
+    top: 5971px;
+    left: 591px;
+    width: 251px;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-29 {
+    display: flex;
+    width: 174px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 6004px;
+    left: 591px;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .frame-29:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .frame-29:hover .text-wrapper-18 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .home-fix .frame-29:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .home-fix .text-wrapper-18 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-30 {
+    display: flex;
+    width: 251px;
+    height: 53.99px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 6036px;
+    left: 591px;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .frame-30:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .frame-30:hover .text-wrapper-18 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .home-fix .frame-30:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .home-fix .text-wrapper-19 {
+    position: absolute;
+    top: 5971px;
+    left: 883px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-20 {
+    position: absolute;
+    top: 6014px;
+    left: 883px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .img-wrapper {
+    position: absolute;
+    top: 6137px;
+    left: 591px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .img-wrapper:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .img-3 {
+    margin-top: 2.7px;
+    width: 40.66px;
+    height: 40.66px;
+    margin-left: 1.3px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .home-fix .group-6 {
+    position: absolute;
+    top: 6137px;
+    left: 646px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .group-6:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .img-4 {
+    margin-top: 4.0px;
+    width: 37.92px;
+    height: 37.92px;
+    margin-left: 2.7px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .home-fix .group-7 {
+    position: absolute;
+    top: 6137px;
+    left: 700px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .home-fix .group-7:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .home-fix .img-5 {
+    margin-top: 5.1px;
+    width: 35.69px;
+    height: 35.69px;
+    margin-left: 3.8px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .home-fix .image-14 {
+    position: absolute;
+    top: 5960px;
+    left: 84px;
+    width: 261px;
+    height: 261px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .home-fix .text-wrapper-21 {
+    position: absolute;
+    top: 6093px;
+    left: 591px;
+    width: 156px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-31 {
+    display: flex;
+    width: 290px;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0px 10px;
+    position: absolute;
+    top: 6115px;
+    left: 883px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .home-fix .frame-31:hover {
+    background-color: #1eb15a; 
+    transform: scale(1.05); 
+  }
+  
+  .home-fix .union {
+    position: absolute;
+    top: 2507px;
+    left: 65px;
+    width: 508px;
+    height: 706px;
+  }
+  
+  .home-fix .frame-32 {
+    display: flex;
+    flex-direction: column;
+    width: 632px;
+    align-items: flex-start;
+    position: absolute;
+    top: 2549px;
+    left: 573px;
+  }
+  
+  .home-fix .text-wrapper-22 {
+    position: relative;
+    align-self: stretch;
+    height: 50.74px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-33 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px 10px 10px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .nikmati-berbagai {
+    position: relative;
+    width: 488px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-34 {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 2775px;
+    left: 431px;
+  }
+  
+  .home-fix .frame-35 {
+    width: 214px;
+    height: 205px;
+    padding: 17px 14px;
+    box-sizing: border-box;  /* penting agar padding tidak menambah ukuran total */
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000040;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+  }
+  
+  
+  
+  .home-fix .frame-36 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .img-6 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .home-fix .frame-37 {
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .home-fix .frame-38 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 10px 10px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-39 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-40 {
+    display: flex;
+    flex-direction: column;
+    width: 238px;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: -62.00px;
+  }
+  
+  .home-fix .text-wrapper-23 {
+    position: relative;
+    width: 167.19px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .potongan-rambut {
+    position: relative;
+    align-self: stretch;
+    margin-bottom: -5.00px;
+    margin-top: -8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-41 {
+    position: relative;
+    width: 214px;
+    height: 205px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+  
+  .home-fix .frame-42 {
+    display: flex;
+    flex-direction: column;
+    width: 186px;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    top: 17px;
+    left: 14px;
+  }
+  
+  .home-fix .text-wrapper-24 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-43 {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 3000px;
+    left: 269px;
+  }
+  
+  .home-fix .text-wrapper-25 {
+    position: relative;
+    width: 176px;
+    margin-top: -8px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-26 {
+    position: absolute;
+    top: 4900px;
+    left: 648px;
+    width: 497px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .frame-44 {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 32px;
+    position: absolute;
+    top: 4901px;
+    left: 105px;
+  }
+  
+  .home-fix .IMG {
+    position: relative;
+    width: 516.91px;
+    height: 739.37px;
+    margin-top: -10.00px;
+    margin-bottom: -10.00px;
+    margin-left: -10.00px;
+    aspect-ratio: 0.69;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-fix .IMG:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .frame-45 {
+    display: flex;
+    flex-direction: column;
+    width: 526.25px;
+    align-items: flex-start;
+    gap: 26px;
+    position: relative;
+  }
+  
+  .home-fix .image-15 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-top: -10.00px;
+    margin-left: -10.00px;
+    margin-right: -10.00px;
+    aspect-ratio: 1.05;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-fix .image-15:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .group-8 {
+    position: relative;
+    width: 508px;
+    height: 112.95px;
+    box-shadow: 0px 0px 10px #00000040;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-fix .group-8:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+  
+  .home-fix .frame-46 {
+    width: 508px;
+    height: 113px;
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  .home-fix .frame-47 {
+    margin-top: 1px;
+    width: 526.25px;
+    height: 112px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .home-fix .profile {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .home-fix .text-wrapper-27 {
+    position: absolute;
+    top: 16px;
+    left: 64px;
+    width: 283px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-28 {
+    position: absolute;
+    top: 52px;
+    left: 18px;
+    width: 454px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .group-9 {
+    position: absolute;
+    top: 5527px;
+    left: 835px;
+    width: 50px;
+    height: 20px;
+  }
+  
+  .home-fix .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 20px;
+  }
+  
+  .home-fix .star-2 {
+    left: 10px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 20px;
+  }
+  
+  .home-fix .star-3 {
+    left: 20px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 20px;
+  }
+  
+  .home-fix .star-4 {
+    left: 30px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 20px;
+  }
+  
+  .home-fix .star-5 {
+    left: 40px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 20px;
+  }
+  
+  .home-fix .frame-48 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 5637px;
+    left: 541px;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-fix .frame-48:hover {
+    transform: scale(1.05);   /* zoom */
+  }
+
+  .home-fix .frame-48:hover .text-wrapper-29 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .home-fix .frame-48:hover .line-5 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .home-fix .text-wrapper-29 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .line-5 {
+    position: relative;
+    width: 8.71px;
+    height: 7.36px;
+    margin-right: -0.50px;
+    object-fit: cover;
+  }
+  
+  .home-fix .text-wrapper-30 {
+    position: absolute;
+    top: 1082px;
+    left: 94px;
+    width: 1089px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .image-16 {
+    position: absolute;
+    top: 1083px;
+    left: 0;
+    width: 506px;
+    height: 646px;
+  }
+  
+  .home-fix .image-17 {
+    position: absolute;
+    top: 1083px;
+    left: 362px;
+    width: 541px;
+    height: 646px;
+  }
+
+  /* Tambahkan ini di bawah CSS gambar yang sudah ada */
+  .home-fix .image-16,
+  .home-fix .image-17,
+  .home-fix .image {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* animasi smooth */
+  }
+
+  .image-link img:hover {
+    transform: scale(1.05); /* zoom */
+    opacity: 0.; /* transparansi */
+    cursor: pointer; /* tanda bisa diklik */
+  }
+  
+  /* Hover untuk frame-34 (baris pertama) */
+  /* Hover hanya pada frame-35 */
+  .frame-35 {
+    transition: transform 0.3s ease;
+  }
+
+  .frame-35:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+
+  /* Matikan hover/klik pada anaknya (frame-36) */
+  .frame-35 .frame-36 {
+    pointer-events: none;
+  }
+
+
+  /* Semua frame-item di baris pertama dan kedua */
+  .frame-34 .frame-41,
+  .frame-43 .frame-41 {
+    transition: transform 0.3s ease; /* animasi smooth saat hover */
+  }
+
+  .frame-34 .frame-41:nth-child(2):hover,
+  .frame-34 .frame-41:nth-child(3):hover,
+  .frame-43 .frame-41:nth-child(1):hover,
+  .frame-43 .frame-41:nth-child(2):hover,
+  .frame-43 .frame-41:nth-child(3):hover,
+  .frame-43 .frame-41:nth-child(4):hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+
+
+
+  .home-fix .frame-49 {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 1435px;
+    left: 481px;
+  }
+  
+  .home-fix .frame-50 {
+    display: flex;
+    flex-direction: column;
+    width: 283.93px;
+    height: 107.84px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .home-fix .text-wrapper-31 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-32 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .home-fix .text-wrapper-100 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    bottom: -20px;
+  }
+  
+  .home-fix .frame-51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-52 {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .frame-53 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home-fix .text-wrapper-33 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #ffa500;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home-fix .text-wrapper-34 {
+    position: relative;
+    width: 123.88px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+  
+  .home-fix .frame-54 {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 1435px;
+    left: 84px;
+  }
+  
+  .home-fix .frame-55 {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 1435px;
+    left: 878px;
+  }
+  
+  .home-fix .text-wrapper-35 {
+    margin-right: -3.00px;
+    position: relative;
+    width: 123.88px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+  
+  .home-fix .hairdresser-scissors {
+    position: absolute;
+    top: 1530px;
+    left: 1133px;
+    width: 133px;
+    height: 165px;
+  }
+  
+  .home-fix .fan-hairbrush-and {
+    position: absolute;
+    top: 2417px;
+    left: 933px;
+    width: 178px;
+    height: 189px;
+  }
+  
+  .home-fix .cleaning-agent {
+    position: absolute;
+    top: 4811px;
+    left: 1056px;
+    width: 209px;
+    height: 187px;
+  }
+  
+  .home-fix .blue-hair-dryer {
+    position: absolute;
+    top: 1094px;
+    left: 30px;
+    width: 212px;
+    height: 210px;
+  }
+  
+  .home-fix .line-6 {
+    position: absolute;
+    top: 89px;
+    left: 274px;
+    width: 78px;
+    height: 1px;
+    object-fit: cover;
+  }

@@ -1,0 +1,1148 @@
+.pricelist-fix {
+  position: relative;
+  width: 1266px;
+  height: 3583px;
+  overflow: hidden;
+  background: radial-gradient(
+    50% 50% at 58% 35%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 240, 1) 50%
+  );
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: none; /* transparan total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+  }
+
+  /* Saat di-scroll */
+  #navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4); /* hitam semi transparan */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: translateY(-8px); /* naik sedikit */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  .pricelist-fix,
+  .pricelist-fix * {
+    z-index: 0;
+  }
+  
+  img {
+    z-index: 0 !important;
+  }
+  
+  img, .pricelist-fix {
+    position: relative;
+    z-index: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding-top: 100px; /* sesuaikan tinggi navbar kamu */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* ganti dengan warna/background kamu */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .pricelist-fix .frame {
+    position: absolute;
+    top: 1138px;
+    left: 88px;
+    width: 1089px;
+    height: 1834px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px #00000040;
+  }
+  
+  .pricelist-fix .desain-tanpa-judul {
+    left: -1px;
+    width: 1267px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    height: 851px;
+    aspect-ratio: 1.49;
+  }
+  
+  .pricelist-fix .img {
+    left: 0;
+    width: 1266px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 851px;
+    aspect-ratio: 1.49;
+    opacity: 0.55;
+  }
+  
+  .pricelist-fix .div-wrapper {
+    display: flex;
+    width: 1041px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 435px;
+    left: 112px;
+  }
+  
+  .pricelist-fix .text-wrapper {
+    position: relative;
+    width: 1096.54px;
+    margin-top: -1.00px;
+    margin-left: -37.77px;
+    margin-right: -37.77px;
+    text-shadow: 2px 2px 5px #00000080;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 52px;
+  }
+  
+  .pricelist-fix .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px; /* atur jarak antar menu di sini */
+    position: absolute;
+    top: 60px;
+    left: 280px;
+  }
+  
+  .pricelist-fix .frame-wrapper {
+    position: relative;
+    width: 75px;
+    height: 47px;
+  }
+  
+  .pricelist-fix .frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pricelist-fix .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    right: 10px; 
+  }
+  
+  .pricelist-fix .frame-3 {
+    position: relative;
+    width: 128px;
+    height: 47px;
+  }
+  
+  .pricelist-fix .frame-4 {
+    display: flex;
+    width: 128px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .pricelist-fix .text-wrapper-3 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .pricelist-fix .text-wrapper-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #f5d000;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .pricelist-fix .text-wrapper-3:hover::after {
+    width: 100%;
+  }
+
+  .pricelist-fix .text-wrapper-3.active::after {
+    width: 100%;
+  }
+
+  .pricelist-fix .text-wrapper-3.active {
+    color: #f5d000;
+  }
+
+  .pricelist-fix .text-wrapper-3:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .pricelist-fix .text-wrapper-4 {
+    position: relative;
+    align-self: stretch;
+    width: 101.41px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .image {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 145px;
+    height: 145px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .pricelist-fix .image:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }
+  
+  .pricelist-fix .frame-5 {
+    display: flex;
+    width: 148px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0; /* jangan pakai padding atas/bawah */
+    position: absolute;
+    top: 47px;
+    left: 1057px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* animasi halus */
+    text-decoration: none;
+  }
+
+  .pricelist-fix .frame-5:hover {
+    background-color: #1eb15a; /* sedikit lebih gelap */
+    transform: scale(1.05); /* efek membesar */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .img-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pricelist-fix .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .group {
+    position: absolute;
+    top: 3074px;
+    left: 0;
+    width: 1274px;
+    height: 509px;
+  }
+  
+  .pricelist-fix .group-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1266px;
+    height: 509px;
+    display: flex;
+    background-color: #000000;
+  }
+  
+  .pricelist-fix .frame-6 {
+    display: flex;
+    margin-top: 460.1px;
+    width: 274.28px;
+    height: 49.36px;
+    margin-left: 495.9px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .pricelist-fix .p {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-7 {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    height: 217px;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 110px;
+    left: 412px;
+  }
+  
+  .pricelist-fix .text-wrapper-6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .group-3 {
+    position: relative;
+    width: 137.69px;
+    height: 189.85px;
+    margin-bottom: -17.18px;
+  }
+  
+  .pricelist-fix .frame-8 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    height: 100%;
+  }
+  
+  .pricelist-fix .text-wrapper-7 {
+    position: relative;
+    align-self: stretch;
+    height: 24.97px;
+    margin-top: -1.00px;
+    color: #ffffffcc;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: transform 0.3s ease;
+  }
+  
+  .pricelist-fix .text-wrapper-8 {
+    height: 24.97px;
+    color: #ffffffcc;
+    font-size: 18px;
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .text-wrapper-7:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+
+  .pricelist-fix .text-wrapper-8:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .pricelist-fix .text-wrapper-9 {
+    position: absolute;
+    top: 111px;
+    left: 591px;
+    width: 251px;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-9 {
+    display: flex;
+    width: 174px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 143px;
+    left: 592px;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .frame-9:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .frame-9:hover .text-wrapper-10 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .pricelist-fix .frame-9:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .pricelist-fix .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-10 {
+    display: flex;
+    width: 251px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 176px;
+    left: 591px;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .frame-10:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .frame-10:hover .text-wrapper-10 {
+    color: #f5d000;           /* ganti warna teks saat hover */
+  }  
+
+  .pricelist-fix .frame-10:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }  
+  
+  .pricelist-fix .text-wrapper-11 {
+    position: absolute;
+    top: 111px;
+    left: 884px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .text-wrapper-12 {
+    position: absolute;
+    top: 138.5px;
+    left: 884px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .img-wrapper {
+    position: absolute;
+    top: 277px;
+    left: 591px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .img-wrapper:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .img-3 {
+    margin-top: 2.7px;
+    width: 40.66px;
+    height: 40.66px;
+    margin-left: 1.3px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .pricelist-fix .group-4 {
+    position: absolute;
+    top: 277px;
+    left: 646px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .group-4:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .img-4 {
+    margin-top: 4.0px;
+    width: 37.92px;
+    height: 37.92px;
+    margin-left: 2.7px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .pricelist-fix .group-5 {
+    position: absolute;
+    top: 277px;
+    left: 701px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .group-5:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .pricelist-fix .img-5 {
+    margin-top: 5.1px;
+    width: 35.69px;
+    height: 35.69px;
+    margin-left: 3.8px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .pricelist-fix .image-2 {
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    width: 261px;
+    height: 261px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .pricelist-fix .text-wrapper-13 {
+    position: absolute;
+    top: 233px;
+    left: 591px;
+    width: 156px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-11 {
+    display: flex;
+    width: 290px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0px 10px;
+    position: absolute;
+    top: 255px;
+    left: 884px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .pricelist-fix .frame-11:hover {
+    background-color: #1eb15a; 
+    transform: scale(1.05); 
+  }
+  
+  .pricelist-fix .whats-app {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .pricelist-fix .text-wrapper-14 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .line {
+    position: absolute;
+    top: 89px;
+    left: 375px;
+    width: 78px;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .pricelist-fix .frame-12 {
+    display: flex;
+    flex-direction: column;
+    width: 1089px;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    top: 953px;
+    left: 88px;
+  }
+  
+  .pricelist-fix .text-wrapper-15 {
+    height: 50.74px;
+    margin-top: -1.00px;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    align-self: stretch;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-13 {
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    top: 1036px;
+    left: 102px;
+  }
+  
+  .pricelist-fix .frame-14 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 32px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #00000040;
+    transition: transform 0.3s ease;
+  }
+
+  .pricelist-fix .frame-14:hover {
+    transform: scale(1.05);
+  }
+  
+  .pricelist-fix .text-wrapper-16 {
+    font-size: 25px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .text-wrapper-17 {
+    font-size: 20px;
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .group-6 {
+    position: absolute;
+    top: 1166px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }  
+  
+  .pricelist-fix .frame-15 {
+    display: flex;
+    width: 611px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+
+  .pricelist-fix .frame-150 {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+
+  
+  .pricelist-fix .text-wrapper-18 {
+    position: relative;
+    width: 1000px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  
+  .pricelist-fix .frame-16 {
+    display: flex;
+    width: 402px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 0;
+    left: 578px;
+  }
+
+  .frame-14.active {
+    background-color: #f5d000;
+    color: #000;
+    transform: scale(1.05);
+  }
+
+  .frame-14 {
+    cursor: pointer;
+  }
+
+ /* ===== DYNAMIC SERVICE CONTENT FIX ===== */
+  .pricelist-fix .text-wrapper-19 {
+    position: relative;
+    width: 394.05px;
+    margin-top: -1.00px;
+    margin-left: -8.05px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .frame-17 {
+    display: flex;
+    width: 997px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+  
+  .pricelist-fix .text-wrapper-20 {
+    position: relative;
+    align-self: stretch;
+    width: 981.29px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .pricelist-fix .group-7 {
+    position: absolute;
+    top: 1343px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+  
+  .pricelist-fix .group-8 {
+    position: absolute;
+    top: 1702px;
+    left: 134px;
+    width: 997px;
+    height: 149px;
+  }
+  
+  .pricelist-fix .group-9 {
+    position: absolute;
+    top: 1526px;
+    left: 134px;
+    width: 997px;
+    height: 184px;
+  }
+  
+  .pricelist-fix .frame-18 {
+    display: flex;
+    width: 611px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .pricelist-fix .frame-19 {
+    display: flex;
+    width: 997px;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    position: absolute;
+    top: 44px;
+    left: 0;
+  }
+  
+  .pricelist-fix .group-10 {
+    position: absolute;
+    top: 2019px;
+    left: 134px;
+    width: 997px;
+    height: 184px;
+  }
+  
+  .pricelist-fix .group-11 {
+    position: absolute;
+    top: 2195px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+  
+  .pricelist-fix .group-12 {
+    position: absolute;
+    top: 2335px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+  
+  .pricelist-fix .group-13 {
+    position: absolute;
+    top: 2475px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+  
+  .pricelist-fix .group-14 {
+    position: absolute;
+    top: 2616px;
+    left: 134px;
+    width: 997px;
+    height: 184px;
+  }
+  
+  .pricelist-fix .group-15 {
+    position: absolute;
+    top: 2792px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+  
+  .pricelist-fix .group-16 {
+    position: absolute;
+    top: 1842px;
+    left: 134px;
+    width: 997px;
+    height: 184px;
+  }
+
+  .pricelist-fix .group-17 {
+    position: absolute;
+    top: 1166px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-18 {
+    position: absolute;
+    top: 1310px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-19 {
+    position: absolute;
+    top: 1490px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-20 {
+    position: absolute;
+    top: 1640px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-21 {
+    position: absolute;
+    top: 1790px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+  
+  .pricelist-fix .group-22 {
+    position: absolute;
+    top: 1970px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-23 {
+    position: absolute;
+    top: 2160px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-24 {
+    position: absolute;
+    top: 2350px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-25 {
+    position: absolute;
+    top: 2540px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-26 {
+    position: absolute;
+    top: 1166px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-27 {
+    position: absolute;
+    top: 1390px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-28 {
+    position: absolute;
+    top: 1166px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-29 {
+    position: absolute;
+    top: 1310px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-30 {
+    position: absolute;
+    top: 1460px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-31 {
+    position: absolute;
+    top: 1610px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-32 {
+    position: absolute;
+    top: 1760px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-33 {
+    position: absolute;
+    top: 1950px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-34 {
+    position: absolute;
+    top: 2130px;
+    left: 134px;
+    width: 997px;
+    height: 148px;
+  }
+
+  .pricelist-fix .group-35 {
+    position: absolute;
+    top: 1166px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-36 {
+    position: absolute;
+    top: 1350px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-37 {
+    position: absolute;
+    top: 1540px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .group-38 {
+    position: absolute;
+    top: 1700px;
+    left: 134px;
+    width: 997px;
+    height: 185px;
+  }
+
+  .pricelist-fix .text-wrapper-200 {
+    position: relative;
+    align-self: stretch;
+    width: 981.29px;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 40px;
+  }
+  
+  .pricelist-fix .hairdresser-scissors {
+    position: absolute;
+    top: 2805px;
+    left: 1011px;
+    width: 255px;
+    height: 239px;
+  }
+  
+  .pricelist-fix .blue-hair-dryer {
+    position: absolute;
+    top: 1085px;
+    left: 28px;
+    width: 201px;
+    height: 184px;
+  }
+  

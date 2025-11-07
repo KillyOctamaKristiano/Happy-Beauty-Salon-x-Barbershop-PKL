@@ -1,0 +1,1265 @@
+.testimoni-fix {
+    width: 1266px;
+    height: 4471px;
+    display: flex;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* ganti dengan warna/background kamu */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: none; /* transparan total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+  }
+
+  /* Saat di-scroll */
+  #navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4); /* hitam semi transparan */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: translateY(-8px); /* naik sedikit */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+
+  .testimoni-fix {
+    flex: 1;
+    width: 1266px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(
+      50% 50% at 58% 35%,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 240, 1) 50%
+    );
+  }
+  
+  .testimoni-fix .desain-tanpa-judul {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 1267px;
+    height: 851px;
+    background-color: #000000;
+    aspect-ratio: 1.49;
+  }
+  
+  .testimoni-fix .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1266px;
+    height: 851px;
+    aspect-ratio: 1.49;
+    object-fit: cover;
+    opacity: 0.55;
+  }
+  
+  .testimoni-fix .frame {
+    display: flex;
+    width: 1041px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 435px;
+    left: 112px;
+  }
+  
+  .testimoni-fix .text-wrapper {
+    position: relative;
+    width: 1096.54px;
+    height: 72px;
+    margin-top: -1.00px;
+    margin-left: -37.77px;
+    margin-right: -37.77px;
+    text-shadow: 2px 2px 5px #00000080;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 52px;
+  }
+  
+  .testimoni-fix .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px; /* atur jarak antar menu di sini */
+    position: absolute;
+    top: 60px;
+    left: 280px;
+  }
+  
+  .testimoni-fix .frame-wrapper {
+    position: relative;
+    width: 75px;
+    height: 47px;
+  }
+  
+  .testimoni-fix .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .testimoni-fix .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-3 {
+    position: relative;
+    width: 128px;
+    height: 47px;
+  }
+  
+  .testimoni-fix .frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimoni-fix .text-wrapper-3 {
+    position: relative; /* tambahkan ini */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+
+  .testimoni-fix .text-wrapper-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #f5d000;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .testimoni-fix .text-wrapper-3:hover::after {
+    width: 100%;
+  }
+
+  .testimoni-fix .text-wrapper-3.active::after {
+    width: 100%;
+  }
+
+  .testimoni-fix .text-wrapper-3.active {
+    color: #f5d000;
+  }
+
+  .testimoni-fix .text-wrapper-3:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .testimoni-fix .frame-5 {
+    display: flex;
+    width: 148px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0; /* jangan pakai padding atas/bawah */
+    position: absolute;
+    top: 47px;
+    left: 1057px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* animasi halus */
+    text-decoration: none;
+  }
+
+  .testimoni-fix .frame-5:hover {
+    background-color: #1eb15a; /* sedikit lebih gelap */
+    transform: scale(1.05); /* efek membesar */
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .image {
+    top: 0;
+    left: 60px;
+    width: 145px;
+    height: 145px;
+    aspect-ratio: 1;
+    position: absolute;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .testimoni-fix .image:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  }
+  
+  .testimoni-fix .frame-5 {
+    display: flex;
+    width: 148px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0; /* jangan pakai padding atas/bawah */
+    position: absolute;
+    top: 47px;
+    left: 1057px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .testimoni-fix .img-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .testimoni-fix .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-6 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 3509px;
+    left: 529px;
+  }
+  
+  .testimoni-fix .frame-7 {
+    display: flex;
+    flex-direction: column;
+    width: 37px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+  
+  .testimoni-fix .text-wrapper-6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -6.00px;
+    margin-bottom: -4.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-8 {
+    position: absolute;
+    top: 966px;
+    left: 84px;
+    width: 1099px;
+    height: 553px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px #00000040;
+  }
+  
+  .testimoni-fix .image-2 {
+    top: 26px;
+    left: 33px;
+    width: 523px;
+    height: 501px;
+    aspect-ratio: 1.05;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .frame-9 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 88px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 43px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-90 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    min-height: 150px;
+    height: auto;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 43px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+  
+  .testimoni-fix .frame-10 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 88px;
+    border-radius: 10px;
+    overflow: visible;
+  }
+  
+  
+  .testimoni-fix .profile {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .testimoni-fix .text-wrapper-7 {
+    position: absolute;
+    top: 12px;
+    left: 61px;
+    width: 283px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .p {
+    position: absolute;
+    top: 50px;
+    left: 13px;
+    width: 500px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  
+  .testimoni-fix .group {
+    position: absolute;
+    top: 35px;
+    left: 61px;
+    width: 53px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .star-2 {
+    left: 7px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .star-3 {
+    left: 14px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .star-4 {
+    left: 21px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .star-5 {
+    left: 28px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .testimoni-fix .frame-11 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 88px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 147px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-111 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 65px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 150px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+  
+  .testimoni-fix .frame-12 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 88px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 251px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-121 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 65px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 235px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-12 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 251px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-91 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    min-height: 130px;
+    height: auto;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 210px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+  
+  .testimoni-fix .frame-92 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 88px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 355px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .frame-13 .frame-7.active,
+.frame-13 .frame-14.active,
+.frame-26 > div.active {
+  background-color: #f5d000;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.frame-13 .frame-7:hover,
+.frame-13 .frame-14:hover,
+.frame-26 > div:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+
+  
+  .testimoni-fix .frame-13 {
+    display: inline-flex;
+    height: 33px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 477px;
+    left: 720px;
+  }
+  
+  .testimoni-fix .frame-14 {
+    display: flex;
+    flex-direction: column;
+    width: 37px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #000000cc;
+    border-radius: 10px;
+  }
+  
+  .testimoni-fix .frame-15 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 106px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 355px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+
+  .testimoni-fix .frame-151 {
+    display: flex;
+    flex-direction: column;
+    width: 479px;
+    height: 65px;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 320px;
+    left: 577px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000040;
+  }
+  
+  .testimoni-fix .frame-16 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 106px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .testimoni-fix .frame-17 {
+    position: absolute;
+    top: 1798px;
+    left: 0;
+    width: 1267px;
+    height: 2051px;
+    background-color: #000000;
+    border-radius: 100px 100px 0px 0px;
+  }
+  
+  .testimoni-fix .frame-18 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr; /* otomatis nambah baris sesuai jumlah gambar */
+    gap: 32px;
+    width: 1088px;
+    position: absolute;
+    top: 1632px;
+    left: 79px;
+  }
+  
+  .frame-18 img {
+    position: static !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .testimoni-fix .IMG {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 341px;
+    height: 492px;
+  }
+  
+  
+  .testimoni-fix .IMG-wa {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-2 {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-3 {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-4 {
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-5 {
+    grid-row: 2 / 3;
+    position: relative;
+    grid-column: 3 / 4;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-6 {
+    position: relative;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-7 {
+    position: relative;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-8 {
+    position: relative;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-9 {
+    position: relative;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-10 {
+    position: relative;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .IMG-11 {
+    grid-row: 4 / 5;
+    position: relative;
+    grid-column: 3 / 4;
+    width: 341px;
+    height: 492px;
+  }
+  
+  .testimoni-fix .frame-19 {
+    position: absolute;
+    top: 3962px;
+    left: -7px;
+    width: 1277px;
+    height: 509px;
+    background-color: #000000;
+  }
+  
+  .testimoni-fix .text-wrapper-8 {
+    position: absolute;
+    top: 3855px;
+    left: 4px;
+    width: 1266px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-20 {
+    display: flex;
+    width: 274px;
+    height: 49px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 4422px;
+    left: 494px;
+  }
+  
+  .testimoni-fix .text-wrapper-9 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-21 {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    height: 217px;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 4075px;
+    left: 410px;
+  }
+  
+  .testimoni-fix .text-wrapper-10 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .group-2 {
+    position: relative;
+    width: 137.69px;
+    height: 189.85px;
+    margin-bottom: -17.18px;
+  }
+  
+  .testimoni-fix .frame-22 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    height: 100%;
+  }
+  
+  .testimoni-fix .text-wrapper-11 {
+    position: relative;
+    align-self: stretch;
+    height: 24.97px;
+    margin-top: -1.00px;
+    color: #ffffffcc;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .text-wrapper-12 {
+    position: relative;
+    align-self: stretch;
+    height: 24.97px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .text-wrapper-12:hover {
+    color: #f5d000; /* efek hover opsional */
+    transform: scale(1.05);
+  }
+  
+  .testimoni-fix .text-wrapper-13 {
+    position: absolute;
+    top: 4076px;
+    left: 590px;
+    width: 251px;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-23 {
+    display: flex;
+    width: 174px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 4109px;
+    left: 590px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .frame-23:hover {
+    transform: scale(1.05);   
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .frame-23:hover .text-wrapper-14 {
+    color: #f5d000;          
+  }  
+
+  .testimoni-fix .frame-23:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  } 
+  
+  .testimoni-fix .text-wrapper-14 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-24 {
+    display: flex;
+    width: 251px;
+    height: 54px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 4141px;
+    left: 590px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .frame-24:hover {
+    transform: scale(1.05);   
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .frame-24:hover .text-wrapper-14 {
+    color: #f5d000;          
+  }  
+
+  .testimoni-fix .frame-24:hover .img-2 {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(89%) saturate(1898%) hue-rotate(8deg) brightness(106%) contrast(104%);
+  } 
+  
+  .testimoni-fix .text-wrapper-15 {
+    position: absolute;
+    top: 4076px;
+    left: 882px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .text-wrapper-16 {
+    position: absolute;
+    top: 4104.4px;
+    left: 882px;
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffffcc;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .img-wrapper {
+    position: absolute;
+    top: 4242px;
+    left: 590px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .img-wrapper:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .img-3 {
+    margin-top: 2.7px;
+    width: 40.66px;
+    height: 40.66px;
+    margin-left: 1.3px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .group-3 {
+    position: absolute;
+    top: 4242px;
+    left: 645px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .group-3:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .img-4 {
+    margin-top: 4.0px;
+    width: 37.92px;
+    height: 37.92px;
+    margin-left: 2.7px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .group-4 {
+    position: absolute;
+    top: 4242px;
+    left: 699px;
+    width: 43px;
+    height: 46px;
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimoni-fix .group-4:hover {
+    transform: scale(1.05);   /* zoom */
+    cursor: pointer;
+  }
+  
+  .testimoni-fix .img-5 {
+    margin-top: 5.1px;
+    width: 35.69px;
+    height: 35.69px;
+    margin-left: 3.8px;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .image-3 {
+    top: 4065px;
+    left: 83px;
+    width: 261px;
+    height: 261px;
+    aspect-ratio: 1;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .text-wrapper-17 {
+    position: absolute;
+    top: 4198px;
+    left: 590px;
+    width: 156px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-25 {
+    display: flex;
+    width: 290px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0px 10px;
+    position: absolute;
+    top: 4220px;
+    left: 882px;
+    background-color: #25d367;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .testimoni-fix .frame-25:hover {
+    background-color: #1eb15a; 
+    transform: scale(1.05); 
+  }
+  
+  .testimoni-fix .whats-app {
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .testimoni-fix .text-wrapper-18 {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-26 {
+    display: inline-flex;
+    height: 33px;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 3730px;
+    left: 505px;
+  }
+
+  /* Style dasar tombol halaman */
+.testimoni-fix .frame-26 > div {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Efek hover */
+.testimoni-fix .frame-26 > div:hover {
+  transform: scale(1.05);
+}
+
+/* Efek tombol aktif */
+.testimoni-fix .frame-26 > div.active {
+  background-color: #f5d000;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .testimoni-fix .frame-27 {
+    display: flex;
+    flex-direction: column;
+    width: 37px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+  }
+  
+  .testimoni-fix .text-wrapper-19 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -6.00px;
+    margin-bottom: -4.00px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .testimoni-fix .frame-28 {
+    display: flex;
+    flex-direction: column;
+    width: 37px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .testimoni-fix .line {
+    position: absolute;
+    top: 89px;
+    left: 759px;
+    width: 78px;
+    height: 1px;
+    object-fit: cover;
+  }
+  
+  .testimoni-fix .group-5 {
+    position: absolute;
+    top: 1519px;
+    left: 117px;
+    width: 1032px;
+    height: 120px;
+  }
+  
+  .testimoni-fix .line-2 {
+    position: absolute;
+    top: 58px;
+    left: 80px;
+    width: 871px;
+    height: 3px;
+  }
+  
+  .testimoni-fix .yellow-cutting {
+    position: absolute;
+    top: 0;
+    left: 912px;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .testimoni-fix .yellow-cutting-2 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    transform: scaleX(-1);
+  }
+
+  .testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+}
+
+.text-wrapper-6.active {
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+  
